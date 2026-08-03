@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import banner from "../assets/home_bannerImg.webp";
+import banner from "../assets/homebanner.jpeg";
 import machineImg from "../assets/home-2ndImage.jpg";
 import specificationImg from "../assets/home-technicalImg.png";
 import mission1 from "../assets/mission1.webp";
