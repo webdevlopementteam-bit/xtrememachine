@@ -42,6 +42,14 @@ function Blog() {
       category: "Dispersion Kneader",
       link: "/the-future-of-filler-machines-trends-and-innovations-in-2025/",
     },
+    {
+      image: blog3,
+      title: "Top 10 PP Filler Machine & LD Filler Machine Manufacturer in India",
+      description:
+        "Looking for the Best PP Filler Machine or a trusted LD Filler Machine Manufacturer in India? Xtreme Machine offers advanced filler masterbatch production lines with high efficiency, customized solutions, and reliable after-sales support...",
+      category: "Filler Machine",
+      link: "/top-10-pp-filler-machine-ld-filler-machine-manufacturer-in-india/",
+    },
   ];
 
   return (
