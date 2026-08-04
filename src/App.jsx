@@ -20,6 +20,7 @@ import Blog2 from "./pages/Blog2";
 import Blog3 from "./pages/Blog3";
 import Blog4 from "./pages/Blog4";
 import Blog5 from "./pages/Blog5";
+import Blog6 from "./pages/Blog6";
 import ScrollToTop from "./component/ScrollToTop";
 import FillerMachineManufacturerGujarat from "./pages/FillerMachineManufacturerGujarat";
 import FillerMasterBatchMumbai from "./pages/FillerMasterBatchMumbai";
@@ -71,6 +72,7 @@ function App() {
         <Route path="/kneader-machine-in-gujarat/" element={<KneaderMachineinGujarat />} />
         <Route path="/dispersion-kneader-in-kolkata/" element={<DispersionKneaderinKolkata />} />
         <Route path="/top-10-pp-filler-machine-ld-filler-machine-manufacturer-in-india/" element={<Blog5 />} />
+        <Route path="/top-10-best-filler-machine-manufacturer-in-delhi/" element={<Blog6 />} />
       </Route>
 
     </Routes>

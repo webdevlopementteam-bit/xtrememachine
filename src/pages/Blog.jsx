@@ -50,6 +50,14 @@ function Blog() {
       category: "Filler Machine",
       link: "/top-10-pp-filler-machine-ld-filler-machine-manufacturer-in-india/",
     },
+    {
+      image: blog1,
+      title: "Top 10 Best Filler Machine Manufacturer in Delhi",
+      description:
+        "If you are searching for the best Filler Machine Manufacturer in Delhi, Xtreme Machine is one of the most trusted and preferred manufacturers in India, offering reliable filling machines for small, medium, and large industries...",
+      category: "Filler Machine",
+      link: "/top-10-best-filler-machine-manufacturer-in-delhi/",
+    },
   ];
 
   return (
