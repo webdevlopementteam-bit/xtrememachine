@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import {
   FaFacebookF,
@@ -8,20 +10,23 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.webp";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-  const navLinkClass = ({ isActive }) =>
+  const isActive = (to) => pathname === to;
+
+  const navLinkClass = (active) =>
     `transition-all duration-300 cursor-pointer whitespace-nowrap ${
-      isActive ? "text-[#E2010E]" : "text-[#5f6875] hover:text-[#E2010E]"
+      active ? "text-[#E2010E]" : "text-[#5f6875] hover:text-[#E2010E]"
     }`;
 
-  const mobileNavLinkClass = ({ isActive }) =>
+  const mobileNavLinkClass = (active) =>
     `block py-3 border-b border-gray-200 text-[15px] font-medium transition-all duration-300 ${
-      isActive ? "text-[#E2010E]" : "text-[#5f6875] hover:text-[#E2010E]"
+      active ? "text-[#E2010E]" : "text-[#5f6875] hover:text-[#E2010E]"
     }`;
 
   return (
@@ -76,72 +81,72 @@ const Navbar = () => {
           {/* LOGO */}
           <div className="flex items-center min-w-fit">
             {/* LOGO */}
-            <NavLink to="/" className="flex items-center min-w-fit">
+            <Link href="/" className="flex items-center min-w-fit">
               <img
-                src={logo}
+                src="/assets/logo.webp"
                 alt="logo"
                 className="w-[180px] sm:w-[220px] object-contain"
               />
-            </NavLink>
+            </Link>
           </div>
 
           {/* DESKTOP MENU */}
           <ul className="hidden xl:flex items-center gap-10 uppercase text-[14px] font-semibold leading-none">
             <li>
-              <NavLink to="/about-us" className={navLinkClass}>
+              <Link href="/about-us" className={navLinkClass(isActive("/about-us"))}>
                 About Us
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/" className={navLinkClass}>
+              <Link href="/" className={navLinkClass(isActive("/"))}>
                 Compounding Line
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
-                to="/dispersion-kneader-machine"
-                className={navLinkClass}
+              <Link
+                href="/dispersion-kneader-machine"
+                className={navLinkClass(isActive("/dispersion-kneader-machine"))}
               >
                 Dispersion Kneader
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/single-shaft-shredder" className={navLinkClass}>
+              <Link href="/single-shaft-shredder" className={navLinkClass(isActive("/single-shaft-shredder"))}>
                 Single Shaft Shredder
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/expertise" className={navLinkClass}>
+              <Link href="/expertise" className={navLinkClass(isActive("/expertise"))}>
                 Expertise
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/our-clients" className={navLinkClass}>
+              <Link href="/our-clients" className={navLinkClass(isActive("/our-clients"))}>
                 Our Clients
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/contact-us" className={navLinkClass}>
+              <Link href="/contact-us" className={navLinkClass(isActive("/contact-us"))}>
                 Contact Us
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/blog" className={navLinkClass}>
+              <Link href="/blog" className={navLinkClass(isActive("/blog"))}>
                 Blog
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink to="/video" className={navLinkClass}>
+              <Link href="/video" className={navLinkClass(isActive("/video"))}>
                 Video
-              </NavLink>
+              </Link>
             </li>
           </ul>
 
@@ -163,9 +168,9 @@ const Navbar = () => {
       >
         {/* MOBILE HEADER */}
         <div className="flex items-center justify-between p-5 border-b border-gray-200">
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>
-            <img src={logo} alt="logo" className="w-[160px] object-contain" />
-          </NavLink>
+          <Link href="/" onClick={() => setMenuOpen(false)}>
+            <img src="/assets/logo.webp" alt="logo" className="w-[160px] object-contain" />
+          </Link>
 
           <button
             onClick={() => setMenuOpen(false)}
@@ -177,77 +182,77 @@ const Navbar = () => {
 
         {/* MOBILE LINKS */}
         <div className="px-5 py-3 uppercase">
-          <NavLink
-            to="/about-us"
-            className={mobileNavLinkClass}
+          <Link
+            href="/about-us"
+            className={mobileNavLinkClass(isActive("/about-us"))}
             onClick={() => setMenuOpen(false)}
           >
             About Us
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/"
-            className={mobileNavLinkClass}
+          <Link
+            href="/"
+            className={mobileNavLinkClass(isActive("/"))}
             onClick={() => setMenuOpen(false)}
           >
             Compounding Line
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/dispersion-kneader-machine"
-            className={mobileNavLinkClass}
+          <Link
+            href="/dispersion-kneader-machine"
+            className={mobileNavLinkClass(isActive("/dispersion-kneader-machine"))}
             onClick={() => setMenuOpen(false)}
           >
             Dispersion Kneader
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/single-shaft-shredder"
-            className={mobileNavLinkClass}
+          <Link
+            href="/single-shaft-shredder"
+            className={mobileNavLinkClass(isActive("/single-shaft-shredder"))}
             onClick={() => setMenuOpen(false)}
           >
             Single Shaft Shredder
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/expertise"
-            className={mobileNavLinkClass}
+          <Link
+            href="/expertise"
+            className={mobileNavLinkClass(isActive("/expertise"))}
             onClick={() => setMenuOpen(false)}
           >
             Expertise
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/our-clients"
-            className={mobileNavLinkClass}
+          <Link
+            href="/our-clients"
+            className={mobileNavLinkClass(isActive("/our-clients"))}
             onClick={() => setMenuOpen(false)}
           >
             Our Clients
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/contact-us"
-            className={mobileNavLinkClass}
+          <Link
+            href="/contact-us"
+            className={mobileNavLinkClass(isActive("/contact-us"))}
             onClick={() => setMenuOpen(false)}
           >
             Contact Us
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/blog"
-            className={mobileNavLinkClass}
+          <Link
+            href="/blog"
+            className={mobileNavLinkClass(isActive("/blog"))}
             onClick={() => setMenuOpen(false)}
           >
             Blog
-          </NavLink>
+          </Link>
 
-          <NavLink
-            to="/video"
-            className={mobileNavLinkClass}
+          <Link
+            href="/video"
+            className={mobileNavLinkClass(isActive("/video"))}
             onClick={() => setMenuOpen(false)}
           >
             Video
-          </NavLink>
+          </Link>
         </div>
       </div>
 

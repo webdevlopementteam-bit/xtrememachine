@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -60,69 +60,69 @@ function Footer() {
 
             <ul className="space-y-4 text-[#b7bcc7] text-[15px] sm:text-[16px] lg:text-[17px]">
               <li>
-                <NavLink to="/" className="hover:text-[#E2010E] transition">
+                <Link href="/" className="hover:text-[#E2010E] transition">
                   Compounding Line
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/dispersion-kneader-machine"
+                <Link
+                  href="/dispersion-kneader-machine"
                   className="hover:text-[#E2010E] transition"
                 >
                   Dispersion Kneader
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/single-shaft-shredder"
+                <Link
+                  href="/single-shaft-shredder"
                   className="hover:text-[#E2010E] transition"
                 >
                   Single Shaft Shredder
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/expertise"
+                <Link
+                  href="/expertise"
                   className="hover:text-[#E2010E] transition"
                 >
                   Expertise
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/our-clients"
+                <Link
+                  href="/our-clients"
                   className="hover:text-[#E2010E] transition"
                 >
                   Our Clients
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/video"
+                <Link
+                  href="/video"
                   className="hover:text-[#E2010E] transition"
                 >
                   Gallery
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink to="/blog" className="hover:text-[#E2010E] transition">
+                <Link href="/blog" className="hover:text-[#E2010E] transition">
                   Blog
-                </NavLink>
+                </Link>
               </li>
 
               <li>
-                <NavLink
-                  to="/contact-us"
+                <Link
+                  href="/contact-us"
                   className="hover:text-[#E2010E] transition"
                 >
                   Contact Us
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>
