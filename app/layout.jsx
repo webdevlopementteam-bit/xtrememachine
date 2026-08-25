@@ -3,6 +3,8 @@ import Script from "next/script";
 import Navbar from "@/src/component/Navbar";
 import Footer from "@/src/component/Footer";
 import ScrollToTop from "@/src/component/ScrollToTop";
+import WhatsAppButton from "@/src/component/WhatsAppButton";
+import LeadPopup from "@/src/component/LeadPopup";
 
 export const metadata = {
   metadataBase: new URL("https://www.xtrememachines.in"),
@@ -26,6 +28,8 @@ export default function RootLayout({ children }) {
         <ScrollToTop />
         <main className="pt-29.5 min-h-screen">{children}</main>
         <Footer />
+        <WhatsAppButton />
+        <LeadPopup />
 
         {/* Google tag (gtag.js) */}
         <Script
