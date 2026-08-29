@@ -58,6 +58,24 @@ function Blog() {
       category: "Filler Machine",
       link: "/top-10-best-filler-machine-manufacturer-in-delhi/",
     },
+    {
+      image:
+        "/assets/blogs/Top%2010%20Masterbatch%20Machine%20Manufacturer%20%26%20Suppliers%20in%20India.webp",
+      title: "Top 10 Masterbatch Machine Manufacturer & Suppliers in India",
+      description:
+        "Looking for a reliable Masterbatch Machine Manufacturer in India? Explore the top 10 manufacturers and suppliers and discover why Xtreme Machines ranks #1...",
+      category: "Masterbatch Machine",
+      link: "/top-10-masterbatch-machine-manufacturer-suppliers-india/",
+    },
+    {
+      image:
+        "/assets/blogs/Top%2010%20Filler%20Masterbatch%20Machine%20Manufacturers%20in%20India.webp",
+      title: "Top 10 Filler Masterbatch Machine Manufacturers in India",
+      description:
+        "Discover the top 10 Filler Masterbatch Machine Manufacturers in India. Compare leading manufacturers and find out why Xtreme Machines is the #1 choice...",
+      category: "Masterbatch Machine",
+      link: "/top-10-filler-masterbatch-machine-manufacturers-india/",
+    },
   ];
 
   return (
@@ -95,7 +113,7 @@ function Blog() {
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-full object-cover hover:scale-110 transition duration-500"
+                  className="w-full h-full object-contain hover:scale-110 transition duration-500"
                 />
               </div>
 
