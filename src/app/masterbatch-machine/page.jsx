@@ -4,7 +4,7 @@ export const metadata = {
     "Xtreme Machines is a leading Masterbatch Machine Manufacturer in India, offering filler masterbatch, PP filler and masterbatch making machines with reliable performance and customized production capacities. Get a quote today.",
   keywords: "Masterbatch Machine manufacturer",
   alternates: {
-    canonical: "https://www.xtrememachines.in/masterbatch-machine/",
+    canonical: "https://www.xtrememachines.in/masterbatch-machine",
   },
 };
 
