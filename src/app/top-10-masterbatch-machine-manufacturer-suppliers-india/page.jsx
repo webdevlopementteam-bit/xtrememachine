@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const slug = "top-10-masterbatch-machine-manufacturer-suppliers-india";
 const canonicalUrl = `https://www.xtrememachines.in/${slug}/`;
 
