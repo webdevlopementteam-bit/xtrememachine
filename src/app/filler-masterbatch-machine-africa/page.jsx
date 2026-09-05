@@ -14,7 +14,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/filler-masterbatch-machine-africa",
+      "https://www.xtrememachines.in/filler-masterbatch-machine-africa/",
   },
 
 

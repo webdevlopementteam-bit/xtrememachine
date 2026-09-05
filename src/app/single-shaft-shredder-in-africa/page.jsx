@@ -14,7 +14,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/single-shaft-shredder-in-africa",
+    canonical: "https://www.xtrememachines.in/single-shaft-shredder-in-africa/",
   },
 
 };

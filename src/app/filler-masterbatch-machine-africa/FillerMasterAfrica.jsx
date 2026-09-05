@@ -19,6 +19,7 @@ function FillerMasterAfrica() {
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
+  const [openFaq, setOpenFaq] = useState(null);
 
   const openImage = (index) => {
     setSelectedImage(index);
@@ -39,14 +40,6 @@ function FillerMasterAfrica() {
       prev === 0 ? galleryImages.length - 1 : prev - 1,
     );
   };
-
-  const applications = [
-    "Plastic Film & Bags",
-    "Plastic Pipes",
-    "Plastic Sheets",
-    "Injection Moulding",
-    "General Plastic Products",
-  ];
 
   const choosingFactors = [
     "Required production capacity",
@@ -529,7 +522,7 @@ function FillerMasterAfrica() {
 
               <div className="border-y border-black/10">
                 {faqs.map((faq, index) => {
-                  const isOpen = selectedImage === `faq-${index}`;
+                  const isOpen = openFaq === index;
 
                   return (
                     <div
@@ -538,9 +531,7 @@ function FillerMasterAfrica() {
                     >
                       <button
                         type="button"
-                        onClick={() =>
-                          setSelectedImage(isOpen ? null : `faq-${index}`)
-                        }
+                        onClick={() => setOpenFaq(isOpen ? null : index)}
                         className="flex w-full items-center justify-between gap-5 py-5 text-left"
                         aria-expanded={isOpen}
                       >
