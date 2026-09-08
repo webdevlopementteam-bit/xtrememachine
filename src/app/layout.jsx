@@ -13,7 +13,7 @@ export const metadata = {
   description:
     "Xtreme Machines manufactures and exports filler machines, dispersion kneaders, single shaft shredders, pelletizing and compounding lines.",
   other: {
-    "google-site-verification": "zC2E99CYphy8TA_8ykz76X_Edqa_rIaD_nbcn6BUJoo",
+    "google-site-verification": "3v6HEPBC38Xd0NquyqtBcKybxC1cHQnN7X1h4gEctqE",
   },
   icons: {
     icon: "/favicon_icon.jpeg",
