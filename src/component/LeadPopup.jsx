@@ -51,7 +51,7 @@ const LeadPopup = () => {
             },
             body: JSON.stringify({
               access_key,
-              subject: "New Lead From Website Popup",
+              subject: "New Lead From Xtreme Machines Popup Form",
               name: formData.name,
               email: formData.email,
               phone: formData.phone,

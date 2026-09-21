@@ -58,7 +58,7 @@ function ContactUs() {
             },
             body: JSON.stringify({
               access_key,
-              subject: "New Inquiry From Website",
+              subject: "New Inquiry From Xtreme Machines",
               first_name: formData.first_name,
               last_name: formData.last_name,
               email: formData.email,
