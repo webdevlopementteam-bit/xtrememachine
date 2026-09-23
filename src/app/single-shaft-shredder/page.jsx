@@ -15,6 +15,9 @@ export const metadata = {
   description:
     "Single Shaft Shredder, Lumps Shredder which is used for crushing the refuse or for recycling systems. The efficient functioning of our....",
   keywords: "\n  Single Shaft Shredder ,\n  Lumps Shredder\n",
+  alternates: {
+    canonical: "https://www.xtrememachines.in/single-shaft-shredder/",
+  },
 };
 
 function SingleShaftShredder() {

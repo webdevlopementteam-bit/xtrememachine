@@ -2,6 +2,12 @@
 
 
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/video/",
+  },
+};
+
 function Video() {
   const videos = [
     {

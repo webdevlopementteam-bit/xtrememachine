@@ -1,3 +1,9 @@
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/top-4-advanced-machines-in-2025-filler-machine-pvc-compounding-line-and-shredders/",
+  },
+};
+
 function Blog2() {
   return (
     <>

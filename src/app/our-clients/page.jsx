@@ -58,6 +58,12 @@ import Link from "next/link";
 
 
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/our-clients/",
+  },
+};
+
 function OurClients() {
   const clients = [
     "/assets/client1.webp",

@@ -1,3 +1,9 @@
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/shredder/",
+  },
+};
+
 export default function Shredder() {
 
   const galleryImages = [

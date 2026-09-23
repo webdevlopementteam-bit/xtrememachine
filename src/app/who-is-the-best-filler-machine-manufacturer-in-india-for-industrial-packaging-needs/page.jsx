@@ -1,3 +1,9 @@
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/who-is-the-best-filler-machine-manufacturer-in-india-for-industrial-packaging-needs/",
+  },
+};
+
 function Blog1() {
   return (
     <>

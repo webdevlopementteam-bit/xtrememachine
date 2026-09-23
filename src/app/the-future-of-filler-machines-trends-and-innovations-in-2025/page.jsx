@@ -1,3 +1,9 @@
+export const metadata = {
+  alternates: {
+    canonical: "https://www.xtrememachines.in/the-future-of-filler-machines-trends-and-innovations-in-2025/",
+  },
+};
+
 function Blog3() {
   return (
     <>

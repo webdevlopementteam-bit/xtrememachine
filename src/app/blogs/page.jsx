@@ -5,6 +5,15 @@ import Link from "next/link";
 
 
 
+export const metadata = {
+  title: "Blogs - Xtreme Machines",
+  description: "Explore our blogs",
+  keywords: "Xtreme Machines blogs",
+  alternates: {
+    canonical: "https://www.xtrememachines.in/blogs/",
+  },
+};
+
 function Blog() {
   const blogs = [
     {

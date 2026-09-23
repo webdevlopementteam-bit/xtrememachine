@@ -5,6 +5,9 @@ export const metadata = {
   title: "Thank You | Xtreme Machines",
   description:
     "Thank you for contacting Xtreme Machines. Our team will get back to you shortly.",
+  alternates: {
+    canonical: "https://www.xtrememachines.in/thank-you/",
+  },
 };
 
 export default function ThankYou() {
