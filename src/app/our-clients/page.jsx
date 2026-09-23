@@ -59,6 +59,11 @@ import Link from "next/link";
 
 
 export const metadata = {
+  title: "Our Clients | Trusted by Leading Rubber & Plastic Companies",
+  description:
+    "See Xtreme Machines' trusted clientele across India & worldwide, backed by 40+ years of quality rubber and plastic processing machinery manufacturing since 1982.",
+  keywords:
+    "xtreme machines clients, rubber machinery clients India, plastic processing machine customers, trusted machinery exporter clients, kneader shredder clients worldwide",
   alternates: {
     canonical: "https://www.xtrememachines.in/our-clients/",
   },

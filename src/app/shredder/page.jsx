@@ -1,4 +1,9 @@
 export const metadata = {
+  title: "Shredder Manufacturer & Exporter | Xtreme Machines",
+  description:
+    "Buy heavy-duty single shaft shredders from Xtreme Machines — built for rubber, plastic & industrial waste size reduction. Trusted manufacturer & exporter from India.",
+  keywords:
+    "shredder manufacturer, plastic shredder machine India, rubber shredder exporter, industrial waste shredder, single shaft shredder price India",
   alternates: {
     canonical: "https://www.xtrememachines.in/shredder/",
   },

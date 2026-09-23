@@ -3,6 +3,11 @@
 
 
 export const metadata = {
+  title: "Video Gallery | Xtreme Machines",
+  description:
+    "Watch Xtreme Machines' product & manufacturing videos — see dispersion kneaders, shredders and compounding lines working live at our Delhi production facility.",
+  keywords:
+    "xtreme machines videos, dispersion kneader working video, single shaft shredder demo video, plastic machinery manufacturing video, rubber processing machine video India",
   alternates: {
     canonical: "https://www.xtrememachines.in/video/",
   },
