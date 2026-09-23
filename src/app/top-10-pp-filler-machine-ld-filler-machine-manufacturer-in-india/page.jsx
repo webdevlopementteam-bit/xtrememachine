@@ -118,7 +118,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Blog",
-          item: "https://www.xtrememachines.in/blog",
+          item: "https://www.xtrememachines.in/blogs/",
         },
         {
           "@type": "ListItem",

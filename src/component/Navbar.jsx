@@ -138,7 +138,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/blog" className={navLinkClass(isActive("/blog"))}>
+              <Link href="/blogs" className={navLinkClass(isActive("/blogs"))}>
                 Blog
               </Link>
             </li>
@@ -239,8 +239,8 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/blog"
-            className={mobileNavLinkClass(isActive("/blog"))}
+            href="/blogs"
+            className={mobileNavLinkClass(isActive("/blogs"))}
             onClick={() => setMenuOpen(false)}
           >
             Blog

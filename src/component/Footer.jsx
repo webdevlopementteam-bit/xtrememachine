@@ -111,7 +111,7 @@ function Footer() {
               </li>
 
               <li>
-                <Link href="/blog" className="hover:text-[#E2010E] transition">
+                <Link href="/blogs" className="hover:text-[#E2010E] transition">
                   Blog
                 </Link>
               </li>
